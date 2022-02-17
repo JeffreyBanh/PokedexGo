@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import Video from '../../video/Video2.mp4';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
 import {Button} from '../ButtonElements';
+import ReactAudioPlayer from 'react-audio-player';
+import Music from '../../music/Go.mp3'
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false);
@@ -14,7 +16,7 @@ const HeroSection = () => {
         <HeroContainer id = "home">
             <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
-
+                <ReactAudioPlayer autoPlay loop controls src = {Music} type ='audio/mp3' />
             </HeroBg>
             <HeroContent>
                 <HeroH1>
@@ -22,7 +24,7 @@ const HeroSection = () => {
                 <HeroP>
                 </HeroP>
                 <HeroBtnWrapper>
-                    {/* <Button 
+                    <Button 
                     to= 'about'
                     onMouseEnter = {onHover} 
                     onMouseLeave={onHover}
@@ -34,8 +36,8 @@ const HeroSection = () => {
                     primary = "true"
                     dark = "true"
                     >
-                    About me {hover ? <ArrowForward /> : <ArrowRight />}
-                    </Button> */}
+                    Ready? {hover ? <ArrowForward /> : <ArrowRight />}
+                    </Button>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text } from './signinElements';
+import { Container, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text } from './signupElements';
 import { useNavigate } from 'react-router';
 
 // function SignupForm(){
@@ -14,20 +14,22 @@ import { useNavigate } from 'react-router';
 //     return <form onSubmit= {handleSubmit}>{}</form>
 //     }
 
-const Signin = () => {
+const SignUp = () => {
     return (
         <Container>
             <FormWrap>
                 <Icon to="/pokedexgo">Pokedex Go</Icon>
                 <FormContent>
-                    <Form action="#">
-                        <FormH1>Sign in to your account</FormH1>
+                    <Form > //action = '#'
+                        <FormH1>Sign up an account</FormH1>
                         <FormLabel htmlFor='for'>Username</FormLabel>
                         <FormInput type='text' required />
                         <FormLabel htmlFor='for'>Password</FormLabel>
                         <FormInput type='password' required />
-                        <FormButton type='submit'>submit</FormButton>
-                        <Text to = '/signup'>Don't have an Account?</Text>
+                        <FormLabel htmlFor='for'>Email</FormLabel>
+                        <FormInput type='email' required />
+                        <FormButton type='submit'to = '/pokedexgo'>submit</FormButton>
+                        <Text to = '/signin'>Already have an account?</Text>
                     </Form>
                 </FormContent>
             </FormWrap>
@@ -35,4 +37,4 @@ const Signin = () => {
     )
 }
 
-export default Signin
+export default SignUp

@@ -95,7 +95,7 @@ const Navbar = ({toggle}) => {
                             spy = {true}
                             exact = 'true'
                             offset = {-80}
-                            activeClass = "active"></NavLinks>
+                            activeClass = "active">TBD</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks 
@@ -106,7 +106,7 @@ const Navbar = ({toggle}) => {
                             exact = 'true'
                             offset = {-80}
                             activeClass = "active"
-                            ></NavLinks>
+                            >TBD</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>

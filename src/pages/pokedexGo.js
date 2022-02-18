@@ -8,7 +8,7 @@ const pokedexgo = () => {
         <>
         <Navbar />
         <HeroSection />
-        <Pokemon />
+        {/* <Pokemon /> */}
         </>
     )
 }

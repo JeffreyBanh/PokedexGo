@@ -2,6 +2,12 @@ import React, {useEffect, useState} from 'react';
 import {FaBars} from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib';
 import {animateScroll as scroll} from 'react-scroll'
+import * as FaIcons from 'react-icons/fa'
+import * as AiIcons from 'react-icons/ai'
+import {Link} from 'react-router-dom'
+import {SidebarData} from './SidebarData';
+import './Navbar.css'
+
 import {
     Nav, 
     NavbarContainer, 
@@ -16,6 +22,9 @@ import {
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false)
+    const [sidebar, setSidebar] = useState(false)
+
+    const showSidebar = () => setSidebar(!sidebar)
 
     const changeNav = () => {
         if (window.scrollY >= 80){
@@ -38,12 +47,36 @@ const Navbar = ({toggle}) => {
         <IconContext.Provider value = {{color: '#fff'}}>
             <Nav scrollNav = {scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to='/' onClick= {toggleHome}>Pokedex Go</NavLogo>
+                    <div className = "navbar">
+                        <Link to = "#" className = 'menu-bars'>
+                            <FaIcons.FaBars onClick = {showSidebar}/>
+                        </Link>
+                    </div>
+                    <nav className = {sidebar ? 'nav-menu active' : 'nav-menu'}>
+                        <ul className = 'nav-menu-items' onClick = {showSidebar}>
+                            <li className = "navbar-toggle">
+                            <Link to ="#" className = 'menu-bars'>
+                                <AiIcons.AiOutlineClose />
+                            </Link>
+                            </li>
+                            {SidebarData.map((item, index) => {
+                                return (
+                                    <li key = {index} className = {item.className}>
+                                        <Link to= {item.path}>
+                                            {item.icon}
+                                            <span>{item.title}</span>
+                                        </Link>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    </nav>
+                    <NavLogo to='/pokedexgo' onClick= {toggleHome}>Pokedex Go</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
-                        {/* <NavItem>
+                        <NavItem>
                             <NavLinks 
                             to='about'
                             smooth = {true} 
@@ -52,7 +85,7 @@ const Navbar = ({toggle}) => {
                             exact = 'true'
                             offset = {-80}
                             activeClass = "active"
-                            >About</NavLinks>
+                            >Pokemon</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks 
@@ -62,7 +95,7 @@ const Navbar = ({toggle}) => {
                             spy = {true}
                             exact = 'true'
                             offset = {-80}
-                            activeClass = "active">Resume</NavLinks>
+                            activeClass = "active"></NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks 
@@ -73,8 +106,8 @@ const Navbar = ({toggle}) => {
                             exact = 'true'
                             offset = {-80}
                             activeClass = "active"
-                            >Project</NavLinks>
-                        </NavItem> */}
+                            ></NavLinks>
+                        </NavItem>
                     </NavMenu>
                     <NavBtn>
                         <NavBtnLink to = "/signin">Sign In</NavBtnLink>

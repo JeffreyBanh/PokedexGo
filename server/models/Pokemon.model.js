@@ -15,7 +15,14 @@ const PokemonSchema = new mongoose.Schema({
         ref: "User",
     },
     id: false
-})
+},
+{
+    toJSON: {
+        virtuals: true,
+        getters: true
+    },
+    id: false
+});
 
 const Pokemon = mongoose.model('Pokemon', PokemonSchema);
 

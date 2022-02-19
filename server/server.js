@@ -21,11 +21,8 @@ connection.once('open', () => {
     console.log('MongoDB database connection established successfully');
 })
 
-const pokemonRouter = require('./routes/pokemons');
-const userRouter = require('./routes/users');
 
-app.use('/pokemons', pokemonRouter);
-app.use('/users', userRouter);
+app.use(require('./routes'));
 
 
 app.listen(PORT, () => {

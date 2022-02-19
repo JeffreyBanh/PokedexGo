@@ -14,7 +14,6 @@ const UserSchema = new mongoose.Schema({
         required: [true, 'Email is required'],
         match:[/^([\w]+@([\w-]+\.)+[\w-]{2,4})?$/, 'Invalid input']
     },
-
     password :{
         type: String,
         require: true,
@@ -22,7 +21,19 @@ const UserSchema = new mongoose.Schema({
     },
 
     pokemons: [{ type: mongoose.Schema.Types.ObjectId, ref: "Pokemon" }]
-})
+},
+
+{
+    toJSON: {
+        virtuals: true
+    },
+    id: false
+});
+
+UserSchema.virtual('pokemonCount').get(function(){
+    return this.pokemons.length;
+});
+
 
 const User = mongoose.model('User', UserSchema);
 

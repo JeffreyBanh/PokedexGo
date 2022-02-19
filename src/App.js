@@ -6,6 +6,7 @@ import Pokedexgo from './pages/pokedexGo'
 import SigninPage from './pages/signin';
 import SignupPage from './pages/signup';
 
+
 function App() {
   return (
     <Router>

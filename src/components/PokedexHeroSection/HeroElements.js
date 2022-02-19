@@ -23,7 +23,7 @@ export const HeroContainer = styled.div`
     }
 `
 
-export const HeroBg = styled.div `
+export const HeroBg = styled.div`
     position: absolute;
     top: 0;
     right: 0;
@@ -93,7 +93,7 @@ export const HeroP = styled.p`
 `
 
 export const HeroBtnWrapper = styled.div`
-    margin-top: 500px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;

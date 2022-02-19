@@ -1,16 +1,29 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const UserSchema = new mongoose.Schema({
     username :{
-        type: string,
-        require: true,
+        type: String,
+        require: [true, 'Username is required'],
         unique: true,
         trim: true,
         minlength: 3
     },
+    email:{
+        type: String,
+        unique: true,
+        required: [true, 'Email is required'],
+        match:[/^([\w]+@([\w-]+\.)+[\w-]{2,4})?$/, 'Invalid input']
+    },
+
+    password :{
+        type: String,
+        require: true,
+        minlength: 3
+    },
+
     pokemons: [{ type: mongoose.Schema.Types.ObjectId, ref: "Pokemon" }]
 })
 
 const User = mongoose.model('User', UserSchema);
 
-export default User;
+module.exports = User;

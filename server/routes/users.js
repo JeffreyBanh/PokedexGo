@@ -1,4 +1,4 @@
-const router = require(express).Router();
+const router = require('express').Router();
 let User = require('../models/User.model');
 
 router.route('/').get((req, res) => {
@@ -7,13 +7,34 @@ router.route('/').get((req, res) => {
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
+router.route('/:id').get((req, res) => {
+    Pokemon.findById(req.params.id)
+        .then(pokemon => res.json(pokemon))
+        .catch(err => res.status(400).json('Error:' + err));
+})
+
+router.route('/:id').delete((req, res) => {
+    Pokemon.findByIdAndDelete(req.params.id)
+        .then(pokemon => res.json(pokemon))
+        .catch(err => res.status(400).json('Error:' + err));
+})
+
+
 router.route('/add').post((req, res) => {
     const username = req.body.username;
-    const newUser = new User({username})
+    const email = req.body.email;
+    const password = req.body.password;
+
+    const newUser = new User({
+        username,
+        email,
+        password,
+    });
+
 
     newUser.save()
         .then(() => res.json('User added'))
         .catch(err => res.status(400).json('Error' + err));
 });
 
-module.export = router;
+module.exports = router;

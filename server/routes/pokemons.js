@@ -1,19 +1,36 @@
-const router = require(express).Router();
-let User = require('../models/User.model');
+const router = require('express').Router();
+let Pokemon = require('../models/Pokemon.model');
 
 router.route('/').get((req, res) => {
-    User.find()
-        .then(users => res.json(users))
+    Pokemon.find()
+        .then(pokemon => res.json(pokemon))
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.route('/add').post((req, res) => {
-    const username = req.body.username;
-    const newUser = new User({username})
+router.route('/:id').get((req, res) => {
+    Pokemon.find({pokeid: req.params.id})
+        .then(pokemon => res.json(pokemon))
+        .catch(err => res.status(400).json('Error:' + err));
+})
 
-    newUser.save()
-        .then(() => res.json('User added'))
+router.route('/:id').delete((req, res) => {
+    Pokemon.findOneAndDelete({pokeid: req.params.id})
+        .then(pokemon => res.json(pokemon))
+        .catch(err => res.status(400).json('Error:' + err));
+})
+
+router.route('/add').post((req, res) => {
+    const pokemon = req.body.pokemon;
+    const pokeid = req.body.pokeid;
+
+    const newPokemon = new Pokemon({
+        pokemon,
+        pokeid,
+    })
+
+    newPokemon.save()
+        .then(() => res.json('Pokemon added'))
         .catch(err => res.status(400).json('Error' + err));
 });
 
-module.export = router;
+module.exports = router;

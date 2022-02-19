@@ -1,5 +1,16 @@
 import React from 'react'
-import { Container, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text } from './signinElements';
+import Img1 from '../../images/pokestop.jpg'
+import { 
+    Container, 
+    FormWrap, 
+    Icon, 
+    FormContent, 
+    Form, 
+    FormH1, 
+    FormLabel, 
+    FormInput, 
+    FormButton, 
+    Text,} from './signinElements';
 import { useNavigate } from 'react-router';
 
 // function SignupForm(){

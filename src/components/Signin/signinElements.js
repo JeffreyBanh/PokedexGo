@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Link as LinkRouter} from 'react-router-dom';
+
 export const Container = styled.div`
     min-height: 692px;
     position: fixed;
@@ -12,7 +13,29 @@ export const Container = styled.div`
     overflow: hidden;
     background: linear-gradient(108deg, rgba(1,147,86,1) 0%, rgba(10,201,122,1) 100%);
 `
+/*
+if we want to add image 
+export const HeroBg = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+`
 
+export const ImageBg = styled.img`
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    background: #232a34;
+    object-fit: cover;
+    background-attachment: fixed;
+    background-position: center;
+`
+*/
 export const FormWrap = styled.div`
     height: 100%;
     display: flex;

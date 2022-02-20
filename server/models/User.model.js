@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { Schema } = mongoose;
 
 const UserSchema = new mongoose.Schema({
     username :{
@@ -16,11 +17,11 @@ const UserSchema = new mongoose.Schema({
     },
     password :{
         type: String,
-        require: true,
+        require: true, 
         minlength: 3
     },
 
-    pokemons: [{ type: mongoose.Schema.Types.ObjectId, ref: "Pokemon" }]
+    pokemons: [{type: Schema.Types.ObjectId, ref: 'Pokemon'}]
 },
 
 {
@@ -29,11 +30,6 @@ const UserSchema = new mongoose.Schema({
     },
     id: false
 });
-
-UserSchema.virtual('pokemonCount').get(function(){
-    return this.pokemons.length;
-});
-
 
 const User = mongoose.model('User', UserSchema);
 

@@ -33,6 +33,7 @@ const userController = {
         })
         .catch(err => res.status(500).json(err));
     },
+    
     deleteUser({ params }, res) {
         User.findOneAndDelete({ _id: params.id })
         .then(data => {
@@ -40,7 +41,7 @@ const userController = {
                 res.status(404).json({ message: 'No user found with that ID.' });
                 return;
             }
-            return Thought.deleteMany({ _id: { $in: data.thoughts }})
+            return Pokemon.deleteMany({ _id: { $in: data.pokemon }})
             .then(data => res.json(data))
             .catch(err => res.status(500).json(err));
         })

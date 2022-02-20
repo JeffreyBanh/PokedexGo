@@ -9,30 +9,46 @@ const pokeomonController = {
     },
 
     getPokemonById({ params }, res) {
-        Pokemon.find({ pokeid: params.id })
+        Pokemon.find({ _id: params.id })
             .then(pokemon => res.json(pokemon))
             .catch(err => res.status(400).json('Error: ' + err));
     },
 
-    deletePokemonById({ params }, res) {
-        Pokemon.findOneAndDelete({ pokeid: params.id })
-            .then(pokemon => res.json(pokemon))
-            .catch(err => res.status(400).json('Error:' + err));
+    addPokemon({ body }, res) {
+        Pokemon.create(body)
+            .then(({ _id }) => {
+                return User.findOneAndUpdate({ _id: body.userId }, { $push: { pokemons: _id }}, {new: true});
+            })
+            .then(data => res.json(data))
+            .catch(err => res.status(500).json(err));
     },
-    addPokemon(req, res) {
-        const pokemon = req.body.pokemon;
-        const pokeid = req.body.pokeid;
 
-        const newPokemon = new Pokemon({
-            pokemon,
-            pokeid,
+    deletePokemonById({ params }, res) {
+        Pokemon.findOneAndDelete({ _id: params.id })
+        .then((data) => {
+            if(!data) {
+                res.status(404).json({message: 'No pokemon found with ID.'})
+                return
+            }
+            return User.findOneAndUpdate({ _id: body.userId }, { $pull: { pokemons: _id }}, { new: true })
+            .then(data => res.json(data))
+            .catch(err => res.status(500).json(err));
         })
+        .catch(err => res.status(500).json(err));
+    },
+   // addPokemon(req, res) {
+    //     const pokemon = req.body.pokemon;
+    //     const pokeid = req.body.pokeid;
 
-        newPokemon.save()
-            .then(() => res.json('Pokemon added'))
-            .catch(err => res.status(400).json('Error' + err));
-    }
+    //     const newPokemon = new Pokemon({
+    //         pokemon,
+    //         pokeid,
+    //     })
 
+    //     newPokemon.save()
+    //         .then(() => res.json('Pokemon added'))
+    //         .catch(err => res.status(400).json('Error' + err));
+    // },
 }
 
 module.exports = pokeomonController;

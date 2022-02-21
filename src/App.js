@@ -5,6 +5,8 @@ import Home from './pages'
 import Pokedexgo from './pages/pokedexGo'
 import SigninPage from './pages/signin';
 import SignupPage from './pages/signup';
+import Pokemon from "./pages/pokemon"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <Route path= '/signin' element = {<SigninPage />}/>
       <Route path= '/signup' element = {<SignupPage />}/>
       <Route path = '/pokedexgo' element = {<Pokedexgo />}/>
+      <Route path = '/pokemon' element = {<Pokemon />}/>
       </Routes>
     </Router>
   );

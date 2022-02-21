@@ -1,1 +1,26 @@
-[{"id": 1, "Pokemon" : "Bulbasaur", "Stats" : 123, "CP": 1}]
+[
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1},
+    {"PokemonImage": "https://img.pokemondb.net/artwork/bulbasaur.jpg", "pokemon" : "Bulbasaur", "attack" : 123, "defence": 123, "hp":123, "cp": 1}
+]
+
+

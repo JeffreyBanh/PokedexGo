@@ -7,6 +7,7 @@ import BasicTable from '../BasicTable'
 import '../style.css'
 import {FaSearch} from 'react-icons/fa'
 
+
 import { 
     HeroContainer, 
     HeroBg, 
@@ -35,7 +36,9 @@ const HeroSection = () => {
                 <ImageBg src = {Img1}  />
                 <ReactAudioPlayer autoPlay loop controls volume = {0} src = {Music} type = 'audio/mp3' />
             </HeroBg>
+            
             <HeroContent>
+                <BasicTable />
                 <HeroH1>
                 </HeroH1>
                 <HeroP>
@@ -54,7 +57,9 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </HeroBtnWrapper>
+                
             </HeroContent>
+            
         </HeroContainer>
         );
 };

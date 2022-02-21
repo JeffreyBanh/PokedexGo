@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom';
+import { Link as LinkRouter} from 'react-router-dom';
 export const PokemonsContainer = styled.div`
     height: 1080px;
     display: flex;
@@ -83,4 +84,18 @@ export const PokemonsH2 = styled.h2`
 export const PokemonsP = styled.p`
     font-size: 1rem;
     text-align: center;
+`
+
+export const Icon = styled(Link)`
+    margin-left: 32px;
+    margin-top: 32px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+
+    @media screen and (max-width: 480px){
+        margin-left: 16px;
+        margin-top: 8px;
+    }
 `

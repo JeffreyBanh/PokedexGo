@@ -1,18 +1,41 @@
 export const COLUMNS = [
     {
-        Header: 'Id',
-        accessor: 'id'
+
+        Header: '',
+        accessor: 'PokemonImage',
+        // Filter: ColumnFilter,
+        disableFilters: true,
+        Cell: tableProps => (
+            <img
+                src={tableProps.row.original.PokemonImage}
+                width={60}
+                alt='Player'
+            />
+        ),
+        sticky: 'left'
     },
     {
         Header: 'Pokemon',
-        accessor: 'pokemon'
+        accessor: 'pokemon',
+        sticky: 'left'
+    },
+
+    {
+        Header: 'Attack',
+        accessor: 'attack'
     },
     {
-        Header: 'Stats',
-        accessor: 'stats'
+        Header: 'Defence',
+        accessor: 'defence'
     },
     {
-        Header: 'CP',
+        Header: 'HP',
+        accessor: 'hp'
+    },
+    {
+        Header: 'Max CP',
         accessor: 'cp'
-    }
+    },
+
+
 ] 

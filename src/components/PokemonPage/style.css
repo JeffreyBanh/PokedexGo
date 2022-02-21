@@ -1,0 +1,27 @@
+.pokemonName {
+    margin: 0 auto;
+    font-size: 3vw;
+}
+
+.tab {
+    border: 2px solid rgb(17, 17, 17) !important;
+    
+}
+
+.panel {
+    width: auto !important;
+    height: 50vw!important;
+    margin-left: 2vw !important;
+}
+
+.pokeimage {
+    align-items: center !important;
+    width: 50vw;
+}
+
+.pokeInfo {
+    display: flex;
+    z-index: 5;
+    font-weight: bold;
+    font-size: 3vw;
+}

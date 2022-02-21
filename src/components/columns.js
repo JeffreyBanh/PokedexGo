@@ -19,7 +19,6 @@ export const COLUMNS = [
         accessor: 'pokemon',
         sticky: 'left'
     },
-
     {
         Header: 'Attack',
         accessor: 'attack'
@@ -36,6 +35,4 @@ export const COLUMNS = [
         Header: 'Max CP',
         accessor: 'cp'
     },
-
-
 ] 

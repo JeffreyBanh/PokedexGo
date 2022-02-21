@@ -42,15 +42,6 @@ const NavbarComp = ({ toggle }) => {
         <Navbar sticky="top" bg="dark" expand={false}>
             <Container fluid>
                 <NavLogo to='/pokedexgo' onClick={toggleHome}>Pokedex Go</NavLogo>
-
-                <NavDropdown className='flex-grow-1 pt-1' title="Pokemons" id="offcanvasNavbarDropdown">
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                </NavDropdown>
-                <NavBtn>
-                    <NavBtnLink to="/signin">Sign In</NavBtnLink>
-                </NavBtn>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
 
                 <Navbar.Offcanvas
@@ -58,6 +49,7 @@ const NavbarComp = ({ toggle }) => {
                     id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel"
                     placement="end"
+                    
                 >
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title id="offcanvasNavbarLabel">Pokedex Go</Offcanvas.Title>
@@ -67,15 +59,14 @@ const NavbarComp = ({ toggle }) => {
                             <NavLinks to='../pokedexgo'>Home</NavLinks>
                             <NavLinks to='../pokemon'>Pokemons</NavLinks>
                         </Nav>
-                        <Form className="d-flex">
-                            <FormControl
-                                type="search"
-                                placeholder="Search"
-                                className="me-2"
-                                aria-label="Search"
-                            />
-                            <Button variant="outline-success">Search</Button>
-                        </Form>
+                        <NavDropdown className='flex-grow-1 pt-1' title="Pokemons" id="offcanvasNavbarDropdown">
+                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                        </NavDropdown>
+                        <NavBtn>
+                            <NavBtnLink to="/signin">Sign In</NavBtnLink>
+                        </NavBtn>                        
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
             </Container>

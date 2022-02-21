@@ -38,7 +38,6 @@ const HeroSection = () => {
             </HeroBg>
             
             <HeroContent>
-                <BasicTable />
                 <HeroH1>
                 </HeroH1>
                 <HeroP>

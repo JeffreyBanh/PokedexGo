@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 export const Styles = styled.div`
     .table {
+        width:100%;
+        align-items:center;
         border: 1px solid #ddd;
         .tr {
             :last-child {
@@ -32,11 +34,7 @@ export const Styles = styled.div`
             top: 0;
             box-shadow: 0px 3px 3px #ccc;
         }
-        .footer {
-            bottom: 0;
-            box-shadow: 0px -3px 3px #ccc;
-        }
-
+        
         .body {
             position: relative;
             z-index: 0;

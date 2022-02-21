@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
 export const HeroContainer = styled.div`
     background: #0c0c0c;
@@ -7,7 +6,8 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 1080px;
+    //height: 1080px;
+    //height: 100%
     position: relative;
     z-index: 1;    
     :before{
@@ -24,7 +24,7 @@ export const HeroContainer = styled.div`
 `
 
 export const HeroBg = styled.div`
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -32,14 +32,6 @@ export const HeroBg = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
-`
-
-export const VideoBg = styled.video`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    background: #232a34;
-    object-fit: cover;
 `
 
 export const ImageBg = styled.img`
@@ -53,10 +45,12 @@ export const ImageBg = styled.img`
 `
 
 export const HeroContent = styled.div`
+    background: #fff;
+    margin-top: 80px;
     z-index: 3;
-    width: 80%
-    height: 80%
-    
+    width: 65%;
+    height: auto;
+    position: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,12 +93,3 @@ export const HeroBtnWrapper = styled.div`
     align-items: center;
 `
 
-export const ArrowForward = styled(MdArrowForward)`
-    margin-left: 8px;
-    font-size: 20px;
-`
-
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-    margin-left: 8px;
-    font-size: 20px;
-`

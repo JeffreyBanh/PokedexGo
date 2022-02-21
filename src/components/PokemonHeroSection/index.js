@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 import Img1 from '../../images/Sword_Shield.png'
+import Img2 from '../../images/Panda.png'
 import BasicTable from '../BasicTable'
 import '../style.css'
 

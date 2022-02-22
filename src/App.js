@@ -9,6 +9,7 @@ import ApolloClient from 'apollo-boost';
 import {ApolloProvider} from '@apollo/react-hooks';
 import { PokemonsContainer } from './containers/PokemonsContainer';
 import PokedexListPage from './pages/pokedexList'
+import PokemonPage from './components/PokemonPage/PokemonPage';
 
 function App() {
   const client = new ApolloClient({
@@ -16,14 +17,14 @@ function App() {
   });
 
   return (
-    <ApolloProvider client = {client}>
+        <ApolloProvider client = {client}>
       <Router>
         <Routes>
         <Route path= '/' element = {<Home />}/>
         <Route path= '/signin' element = {<SigninPage />}/>
         <Route path= '/signup' element = {<SignupPage />}/>
         <Route path = '/pokedexgo' element = {<Pokedexgo />}/>
-        <Route path = '/pokedexgo/pokedexList' element = {<PokedexListPage />}/>
+        <Route path = '/pokedexgo/pokedexList' element = {<PokemonPage />}/>
         <Route path = '/pokedexgo/pokemon/:pokemonId' element =  {<PokemonsContainer />} />
         </Routes>
       </Router>

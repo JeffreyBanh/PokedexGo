@@ -54,6 +54,20 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+`
+export const HeroContent2 = styled.div`
+    background: #fff;
+    margin-top: 80px;
+    // border: 5px solid black;
+    z-index: 3;
+    width: 65%;
+    height: auto;
+    position: flex;
+    display: flex;
+    flex-direction: column;
+
+    
 `
 
 export const HeroH1 = styled.h1`

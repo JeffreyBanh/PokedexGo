@@ -1,0 +1,88 @@
+.pokemonName {
+    margin: 0 auto;
+    font-size: 3vw;
+}
+
+.tab {
+    border-top: 2px solid rgb(17, 17, 17) !important;
+    
+}
+
+.panel {
+    width: auto !important;
+    height: 50vw!important;
+    margin-left: 2vw !important;
+}
+
+.pokeimage {
+    align-items: center !important;
+    width: 50vw;
+}
+
+.pokeInfo {
+    display: flex;
+    font-weight: bold;
+    font-size: 5vw;
+    border-bottom: 4px solid black;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
+
+table {
+    width: 100%;
+    margin-bottom: 3vw;
+    border-bottom: 1px solid black;
+    ;
+}
+
+th {
+    background-color: rgb(91, 91, 233) !important;
+}
+
+th, td {
+    font-size: 3vw;
+    
+} ;
+
+.bar {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    border: 1px solid black !important;
+
+}
+
+.barInfo {
+
+    color: black;
+    font-weight: bold !important;
+    margin-left: 2vw !important;
+    /* align-items: center !important; */
+}
+
+.barNmb {
+    color: green;
+    text-align: end;
+    margin-top: 10px;
+}
+
+.fstmv {
+    font-size: 3vw;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: .2rem;
+    background-color: rgb(246, 255, 122);
+}
+
+
+.movesContainer {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}

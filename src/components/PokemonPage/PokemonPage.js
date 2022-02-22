@@ -4,25 +4,27 @@ import '../style.css'
 import ReactAudioPlayer from 'react-audio-player';
 import PokemonImage from './PokemonImage';
 import PokemonInfo from './PokemonInfo';
-import { 
-    HeroContainer, 
-    HeroBg, 
-    HeroContent2, 
-    ImageBg, } from '../PokemonHeroSection/PokemonHeroSectionElements';
+import StatesBar from './StatsBar';
+
+import {
+    HeroContainer,
+    HeroBg,
+    HeroContent2,
+    ImageBg,
+} from '../PokemonHeroSection/PokemonHeroSectionElements';
 
 const PokemonPage = () => {
-    
+
     return (
         <HeroContainer>
             <HeroBg>
-                <ImageBg src = {Img1}  />
-                <ReactAudioPlayer/>
+                <ImageBg src={Img1} />
+                <ReactAudioPlayer />
             </HeroBg>
             <HeroContent2>
                 <PokemonImage />
                 <PokemonInfo />
             </HeroContent2>
-            
         </HeroContainer>
     )
 };

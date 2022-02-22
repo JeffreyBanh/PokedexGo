@@ -41,7 +41,6 @@ const BasicTable = () => {
                     })
                 }
                 <tr>
-                <td></td>
                 </tr>
             </tbody>
         </table>

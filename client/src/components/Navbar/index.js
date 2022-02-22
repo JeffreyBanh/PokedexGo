@@ -7,6 +7,7 @@ import * as AiIcons from 'react-icons/ai'
 import {Link} from 'react-router-dom'
 import {SidebarData} from './SidebarData';
 import './Navbar.css'
+import SubMenu from './subMenu';
 
 import {
     Nav, 
@@ -53,21 +54,21 @@ const Navbar = ({toggle}) => {
                         </Link>
                     </div>
                     <nav className = {sidebar ? 'nav-menu active' : 'nav-menu'}>
-                        <ul className = 'nav-menu-items' onClick = {showSidebar}>
+                        <ul className = 'nav-menu-items' >
                             <li className = "navbar-toggle">
                             <Link to ="#" className = 'menu-bars'>
-                                <AiIcons.AiOutlineClose />
+                                <AiIcons.AiOutlineClose onClick = {showSidebar}/>
+                            
                             </Link>
                             </li>
                             {SidebarData.map((item, index) => {
-                                return (
-                                    <li key = {index} className = {item.className}>
-                                        <Link to= {item.path}>
-                                            {item.icon}
-                                            <span>{item.title}</span>
-                                        </Link>
-                                    </li>
-                                )
+                                return <SubMenu item = {item} key = {index}/>;
+                                    // <li key = {index} className = {item.className}>
+                                    //     <Link to= {item.path}>
+                                    //         {item.icon}
+                                    //         <span>{item.title}</span>
+                                    //     </Link>
+                                    // </li>
                             })}
                         </ul>
                     </nav>
@@ -75,7 +76,7 @@ const Navbar = ({toggle}) => {
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
-                    <NavMenu>
+                    {/* <NavMenu>
                         <NavItem>
                             <NavLinks 
                             to='about'
@@ -85,30 +86,9 @@ const Navbar = ({toggle}) => {
                             exact = 'true'
                             offset = {-80}
                             activeClass = "active"
-                            >Pokemon</NavLinks>
+                            ></NavLinks>
                         </NavItem>
-                        <NavItem>
-                            <NavLinks 
-                            to='resume'
-                            smooth = {true} 
-                            duration = {500}
-                            spy = {true}
-                            exact = 'true'
-                            offset = {-80}
-                            activeClass = "active">TBD</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks 
-                            to='project'
-                            smooth = {true} 
-                            duration = {500}
-                            spy = {true}
-                            exact = 'true'
-                            offset = {-80}
-                            activeClass = "active"
-                            >TBD</NavLinks>
-                        </NavItem>
-                    </NavMenu>
+                    </NavMenu> */}
                     <NavBtn>
                         <NavBtnLink to = "/signin">Sign In</NavBtnLink>
                     </NavBtn>

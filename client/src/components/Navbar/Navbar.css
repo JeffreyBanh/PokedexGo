@@ -9,6 +9,10 @@
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
+    height: 80px;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
 }
 
 .nav-menu {

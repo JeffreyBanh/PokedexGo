@@ -1,22 +1,44 @@
+// const router = require('express').Router();
+
+// const {
+//     getAllUsers,
+//     getUserById,
+//     createUser,
+//     deleteUser,
+// } = require('../../controllers/user-controllers')
+
+// router
+//     .route('/')
+//     .get(getAllUsers)
+//     .post(createUser);
+
+// router.route('/:id')
+//     .get(getUserById)
+//     .delete(deleteUser)
+
+
+// module.exports = router;
+
+
 const router = require('express').Router();
-
 const {
-    getAllUsers,
-    getUserById,
+    getSingleUser,
     createUser,
-    deleteUser,
-} = require('../../controllers/user-controllers')
+    login,
+    savePokemon,
+    deletePokemon,
+} = require('../../controllers/user-controller');
 
-router
-    .route('/')
-    .get(getAllUsers)
-    .post(createUser);
+// import middleware
+const { authMiddleware } = require('../../utils/auth');
 
-router.route('/:id')
-    .get(getUserById)
-    .delete(deleteUser)
+// put authMiddleware anywhere we need to send a token for verification of user
+router.route('/').post(createUser).put(authMiddleware, savePokemon);
 
+router.route('/login').post(login);
+
+router.route('/me').get(authMiddleware, getSingleUser);
+
+router.route('/pokemon/:pokemonId').delete(authMiddleware, deletePokemon);
 
 module.exports = router;
-
-

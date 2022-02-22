@@ -1,5 +1,8 @@
-import React from 'react'
-import Img1 from '../../images/pokestop.jpg'
+import React, {useState} from 'react'
+import auth from '../../utils/auth';
+import { useMutation } from '@apollo/react-hooks';
+import { LOGIN_USER } from '../../utils/mutations';
+
 import { 
     Container, 
     FormWrap, 
@@ -11,6 +14,7 @@ import {
     FormInput, 
     FormButton, 
     Text,} from './signinElements';
+
 import { useNavigate } from 'react-router';
 
 // function SignupForm(){
@@ -33,9 +37,15 @@ const Signin = () => {
                 <FormContent>
                     <Form action="#">
                         <FormH1>Sign in to your account</FormH1>
-                        <FormLabel htmlFor='for'>Username</FormLabel>
-                        <FormInput type='text' required />
-                        <FormLabel htmlFor='for'>Password</FormLabel>
+                        <FormLabel htmlFor='username'>Username</FormLabel>
+                        <FormInput 
+                        type='text' 
+                        placeholder = 'Your username'
+                        name = 'username'
+                        onChange = {handleInputChange}
+                        value = {userFormData.username}
+                        required />
+                        <FormLabel htmlFor='password'>Password</FormLabel>
                         <FormInput type='password' required />
                         <FormButton type='submit'>submit</FormButton>
                         <Text to = '/signup'>Don't have an Account?</Text>

@@ -10,6 +10,7 @@ import {ApolloProvider} from '@apollo/react-hooks';
 import { PokemonsContainer } from './containers/PokemonsContainer';
 import PokedexListPage from './pages/pokedexList'
 import PokemonPage from './components/PokemonPage/PokemonPage';
+import UserPage from './components/UserPage/UserPage';
 
 function App() {
   const client = new ApolloClient({
@@ -24,7 +25,7 @@ function App() {
         <Route path= '/signin' element = {<SigninPage />}/>
         <Route path= '/signup' element = {<SignupPage />}/>
         <Route path = '/pokedexgo' element = {<Pokedexgo />}/>
-        <Route path = '/pokedexgo/pokedexList' element = {<PokemonPage />}/>
+        <Route path = '/pokedexgo/pokedexList' element = {<UserPage />}/>
         <Route path = '/pokedexgo/pokemon/:pokemonId' element =  {<PokemonsContainer />} />
         </Routes>
       </Router>

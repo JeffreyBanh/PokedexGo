@@ -33,15 +33,16 @@ const StatesBar = () => {
             <div>
                 <h1 className='fstmv'>Fast Moves</h1>
                 <Stack className='movesContainer' spacing={2}>
-                    <Item>Tackle<span>Type</span></Item>
-                    <Item>Vine Whip<span>Type</span></Item>
+                    <Item className='item'>Tackle<span>Type</span></Item>
+                    <Item className='item'>Vine Whip<span>Type</span></Item>
                 </Stack>
                 <h1 className='fstmv'>Charge Moves</h1>
                 <Stack className='movesContainer' spacing={2}>
-                    <Item>Power Whip<span>Type</span></Item>
-                    <Item>Seed Bomb<span>Type</span></Item>
-                    <Item>Sludge Bomb<span>Type</span></Item>
+                    <Item className='item'>Power Whip<span>Type</span></Item>
+                    <Item className='item'>Seed Bomb<span>Type</span></Item>
+                    <Item className='item'>Sludge Bomb<span>Type</span></Item>
                 </Stack>
+                
             </div>
         </div>
 

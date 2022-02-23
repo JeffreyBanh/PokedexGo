@@ -24,6 +24,10 @@ const PokemonPage = () => {
             <HeroContent2>
                 <PokemonImage />
                 <PokemonInfo />
+                
+                <button className='button' type='submit'>
+                    Add Pokemon
+                </button>
             </HeroContent2>
         </HeroContainer>
     )

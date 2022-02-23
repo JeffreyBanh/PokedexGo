@@ -27,7 +27,7 @@ export const SidebarData = [
             },
             {
                 title: 'Profile',
-                path: '/pokedexgo/users',
+                path: '/pokedexgo/user',
                 icon: <FaIcons.FaUser/>,
             }
         ]
@@ -54,7 +54,7 @@ export const SidebarData = [
     },
     {
         title: 'Egg',
-        path: '/',
+        path: '/pokedexgo/eggs',
         icon: <FaIcons.FaEgg/>,
         className: 'nav-text'
     },

@@ -57,8 +57,9 @@ export const HeroContent = styled.div`
     
 `
 export const HeroContent2 = styled.div`
-    background: #fff;
+    background: #eee;
     margin-top: 80px;
+    border-radius: 1rem;
     // border: 5px solid black;
     z-index: 3;
     width: 65%;
@@ -66,7 +67,6 @@ export const HeroContent2 = styled.div`
     position: flex;
     display: flex;
     flex-direction: column;
-
     
 `
 

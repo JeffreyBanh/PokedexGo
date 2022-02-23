@@ -1,0 +1,66 @@
+.userimg {
+    display: block;
+    background-color: rgb(202, 202, 202);
+    border: .4rem solid rgb(180, 112, 169);
+    border-radius: 100%;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.pokeimg {
+    margin: 0 auto;
+    width: 6vw !important;
+}
+.username {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.pokemon{
+    font-weight: bold;
+    border-radius: .1rem;
+    text-align: center;
+    background-color: rgb(250, 170, 233);
+    margin: 0 auto;
+    font-size: 2vw;
+    width: 20vw;
+}
+
+.table {
+    width: 20vw !important;
+    margin: 0 auto;
+}
+table tr:hover {background-color: #ddd;}
+.td {
+    margin: 0 auto;
+    font-size: 1vw !important;
+}
+.tr{
+    width: 20vw !important;
+    height: 7vw;
+}
+
+.tr:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 480px){
+    .table {
+        width: 30vw !important;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .tr{
+        width: 30vw !important;
+        height: 7vw;
+    }
+    .pokemon{
+        width: 50%;
+        font-size: 3vw;
+    }
+}
+

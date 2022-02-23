@@ -73,9 +73,9 @@ const Navbar = ({toggle}) => {
                         </ul>
                     </nav>
                     <NavLogo to='/pokedexgo' onClick= {toggleHome}>Pokedex Go</NavLogo>
-                    <MobileIcon onClick={toggle}>
+                    {/* <MobileIcon onClick={toggle}>
                         <FaBars />
-                    </MobileIcon>
+                    </MobileIcon> */}
                     {/* <NavMenu>
                         <NavItem>
                             <NavLinks 

@@ -17,13 +17,13 @@ const StatesBar = () => {
         <div className='bar'>
             <Stack sx={{ width: '100%' }} spacing={5}>
                 <p className='barInfo'>
-                    Attack <span className='barNmb'>24</span>
+                    Attack <span className='barNmb'>37</span>
                 </p>
-                <LinearProgress variant="determinate" value={100} color="secondary" />
+                <LinearProgress variant="determinate" value={37} color="secondary" />
                 <p className='barInfo'>
-                    Defence <span className='barNmb'>24</span>
+                    Defence <span className='barNmb'>28</span>
                 </p>
-                <LinearProgress variant="determinate" value={24} color="inherit" />
+                <LinearProgress variant="determinate" value={28} color="inherit" />
                 <p className='barInfo'>
                     Health <span className='barNmb'>24</span>
                 </p>

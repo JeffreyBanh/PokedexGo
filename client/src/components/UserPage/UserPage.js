@@ -1,10 +1,9 @@
 import React from 'react'
 import Img2 from '../../images/img2.jpg'
-import '../style.css'
+import './style.css'
 import ReactAudioPlayer from 'react-audio-player';
-import PokemonImage from './PokemonImage';
-import PokemonInfo from './PokemonInfo';
-import StatesBar from './StatsBar';
+import UserImage from './UserImage';
+import UserTable from './UserTable';
 
 import {
     HeroContainer,
@@ -13,7 +12,7 @@ import {
     ImageBg,
 } from '../PokemonHeroSection/PokemonHeroSectionElements';
 
-const PokemonPage = () => {
+const UserPage = () => {
 
     return (
         <HeroContainer>
@@ -22,14 +21,10 @@ const PokemonPage = () => {
                 <ReactAudioPlayer />
             </HeroBg>
             <HeroContent2>
-                <PokemonImage />
-                <PokemonInfo />
-                
-                <button className='button' type='submit'>
-                    Add Pokemon
-                </button>
+                <UserImage />
+                <UserTable />
             </HeroContent2>
         </HeroContainer>
     )
 };
-export default PokemonPage;
+export default UserPage;

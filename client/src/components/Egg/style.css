@@ -1,0 +1,36 @@
+.eggimg {
+    display: block;
+    background-color: rgb(202, 202, 202);
+    border: .8vw solid rgb(180, 112, 169);
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.eggGrp {
+    display: block;
+    font-size: 2vw;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+.eggKm {
+    font-size: 3vw;
+    padding-bottom: 5px;
+    border-bottom: .1rem solid black;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: rgb(81, 209, 98);
+    border-radius: .4rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.eggmon {
+    width: 6vw;
+}
+.card:hover {
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}

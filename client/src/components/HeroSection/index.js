@@ -16,7 +16,7 @@ const HeroSection = () => {
         <HeroContainer id = "home">
             <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
-                <ReactAudioPlayer autoPlay loop controls volume = {0.1} src = {Music} type = 'audio/mp3' />
+                {/* <ReactAudioPlayer autoPlay loop controls volume = {0.1} src = {Music} type = 'audio/mp3' /> */}
             </HeroBg>
             <HeroContent>
                 <HeroH1>

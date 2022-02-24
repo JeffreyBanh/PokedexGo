@@ -47,20 +47,20 @@ export const SidebarData = [
             },
             {
                 title: 'Raid Exclusive Pokemon',
-                path: '/pokedexgo/users',
+                path: '/pokedexgo/raidExclusive',
                 icon: <SiIcons.SiNodemon/>,
             },
         ]
     },
     {
         title: 'Egg',
-        path: '/',
+        path: '#',
         icon: <FaIcons.FaEgg/>,
         className: 'nav-text'
     },
     {
         title: 'CP Calulator',
-        path: '/',
+        path: '#',
         icon: <FaIcons.FaCalculator />,
         className: 'nav-text'
     },

@@ -14,9 +14,6 @@ import {
     NavbarContainer, 
     NavLogo, 
     MobileIcon, 
-    NavMenu, 
-    NavItem, 
-    NavLinks,
     NavBtn,
     NavBtnLink
 } from './NavbarElements';
@@ -73,9 +70,7 @@ const Navbar = ({toggle}) => {
                         </ul>
                     </nav>
                     <NavLogo to='/pokedexgo' onClick= {toggleHome}>Pokedex Go</NavLogo>
-                    <MobileIcon onClick={toggle}>
-                        <FaBars />
-                    </MobileIcon>
+
                     {/* <NavMenu>
                         <NavItem>
                             <NavLinks 

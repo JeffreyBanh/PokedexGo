@@ -28,7 +28,7 @@ export const COLUMNS = [
         accessor: 'defence'
     },
     {
-        Header: 'HP',
+        Header: 'Health',
         accessor: 'hp'
     },
     {

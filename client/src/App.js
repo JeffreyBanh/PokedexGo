@@ -7,15 +7,10 @@ import SigninPage from './pages/signin';
 import SignupPage from './pages/signup';
 import ApolloClient from 'apollo-boost';
 import {ApolloProvider} from '@apollo/react-hooks';
-import { PokemonsContainer, PokemonContainer } from './containers/PokemonsContainer';
 import PokedexListPage from './pages/pokedexList'
+import RaidExclusivePage from './pages/raidExclusive'
 
 function App() {
-
-
-  // const client2 = new ApolloClient({
-  //   uri: 'https://graphql-pokemon2.vercel.app'
-  // });
 
   const client = new ApolloClient({
     request: (operation) => {
@@ -41,6 +36,7 @@ function App() {
           <Route path = '/pokedexgo' element = {<Pokedexgo />}/>
           <Route path = '/pokedexgo/pokedexList' element = {<PokedexListPage />}/>
           <Route path = '/pokedexgo/pokemon/:pokemonId' element =  {<PokedexListPage />} />
+          <Route path = '/pokedexgo/raidExclusive' element =  {<RaidExclusivePage />} />
         </Routes>
       </Router>
     </ApolloProvider>

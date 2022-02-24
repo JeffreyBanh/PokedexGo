@@ -27,7 +27,7 @@ const Footer = () => {
             <FooterWrap>
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
-                        <FooterLinkItems>
+                        {/* <FooterLinkItems>
                             <FooterLinkTitle>Example 1</FooterLinkTitle>
                                 <FooterLink to = "/">TBD1</FooterLink>
                                 <FooterLink to = "/">TBD2</FooterLink>
@@ -54,13 +54,13 @@ const Footer = () => {
                                 <FooterLink to = "/">TBD2</FooterLink>
                                 <FooterLink to = "/">TBD3</FooterLink>
                                 <FooterLink to = "/">TBD4</FooterLink>
-                        </FooterLinkItems>
+                        </FooterLinkItems> */}
 
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to = '/pokedexgo' onClick = {toggleHome}>Pokedex Go</SocialLogo>
+                        <SocialLogo to = '#' onClick = {toggleHome}>Pokedex Go</SocialLogo>
                         <WebsiteRights>Pokedex Go © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink 

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 import Img1 from '../../images/Sword_Shield.png'
-import BasicTable from '../BasicTable'
 import '../style.css'
-
+import Table from '../Table';
+import '../table.css'
 import { 
     HeroContainer, 
     HeroBg, 
@@ -24,7 +24,8 @@ const PokemonHeroSection = () => {
                 <ReactAudioPlayer/>
             </HeroBg>
             <HeroContent>
-                <BasicTable />
+                <Table />
+                {/* <Button /> */}
             </HeroContent>
         </HeroContainer>
         );

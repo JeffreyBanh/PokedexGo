@@ -77,8 +77,18 @@ export const getPokemonType = () => {
 }
 
 
-export const getPokemonType = () => {
+export const getPokemonStats = () => {
     return fetch("https://pokemon-go1.p.rapidapi.com/pokemon_stats.json", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "pokemon-go1.p.rapidapi.com",
+            "x-rapidapi-key": "cb11f2ee2fmsha08fecdbc24fd3cp11b47bjsn82e3b7599a4d"
+        }
+    })
+}
+
+export const getPokemonCP = () => {
+    return fetch("https://pokemon-go1.p.rapidapi.com/pokemon_max_cp.json", {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "pokemon-go1.p.rapidapi.com",

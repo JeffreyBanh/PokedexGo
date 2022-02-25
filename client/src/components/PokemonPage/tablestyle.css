@@ -1,3 +1,5 @@
+
+
 .pokemonName {
     margin: 0 auto;
     font-size: 3vw;
@@ -56,13 +58,13 @@ table {
 }
 
 th {
-    background-color: rgb(91, 91, 233) !important;
+    background-color: rgb(91, 91, 233) ;
 }
 
-th, td {
+/* th, td {
     font-size: 3vw;
     
-} ;
+} ; */
 
 .bar {
     display: flex;
@@ -78,7 +80,7 @@ th, td {
     font-size: 3vw;
     font-weight: bold !important;
     margin-left: 2vw !important;
-    /* align-items: center !important; */
+align-items: center !important; 
 }
 
 .barNmb {

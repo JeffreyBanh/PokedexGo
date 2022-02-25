@@ -1,6 +1,6 @@
 import React from 'react'
 import Img2 from '../../images/img2.jpg'
-import '../style.css'
+import './tablestyle.css'
 import ReactAudioPlayer from 'react-audio-player';
 import PokemonImage from './PokemonImage';
 import PokemonInfo from './PokemonInfo';

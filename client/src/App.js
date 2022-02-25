@@ -9,10 +9,10 @@ import ApolloClient from 'apollo-boost';
 import {ApolloProvider} from '@apollo/react-hooks';
 import PokedexListPage from './pages/pokedexList'
 import RaidExclusivePage from './pages/raidExclusive'
-
 import PokemonPage from './pages/pokemonPage'
 import UserMainPage from './pages/userMainPage';
 import EggMPage from './pages/EggMain';
+
 function App() {
 
   const client = new ApolloClient({
@@ -38,7 +38,7 @@ function App() {
           <Route path= '/signup' element = {<SignupPage />}/>
           <Route path = '/pokedexgo' element = {<Pokedexgo />}/>
           <Route path = '/pokedexgo/pokedexList' element = {<PokedexListPage />}/>
-          <Route path = '/pokedexgo/pokemon/:pokemonId' element =  {<PokedexListPage />} />
+          <Route path = '/pokedexgo/pokemon/:pokemonId' element =  {< PokemonPage />} />
           <Route path = '/pokedexgo/raidExclusive' element =  {<RaidExclusivePage />} />
           <Route path = '/pokedexgo/pokemon' element =  {<PokemonPage />} />
           <Route path = '/pokedexgo/user' element = {<UserMainPage />} />

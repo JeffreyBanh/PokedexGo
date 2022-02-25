@@ -7,7 +7,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import './style.css'
+import './tablestyle.css'
 import { textAlign } from '@mui/system';
 import Grid from '@mui/material/Grid';
 

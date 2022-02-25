@@ -1,12 +1,9 @@
 import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
 import React, {useEffect, useState} from 'react';
-import * as IoIcons from 'react-icons/io'
 import * as RiIcons from 'react-icons/ri'
 import * as MdIcons from 'react-icons/md'
 import * as SiIcons from 'react-icons/si'
-// import * as BsIcons from 'react-icons/Bs'
-import * as GrIcons from 'react-icons/gr'
 import * as ImIcons from 'react-icons/im'
 
 export const SidebarData = [
@@ -54,11 +51,8 @@ export const SidebarData = [
     },
     {
         title: 'Egg',
-<<<<<<< HEAD
         path: '#',
-=======
         path: '/pokedexgo/eggs',
->>>>>>> main
         icon: <FaIcons.FaEgg/>,
         className: 'nav-text'
     },

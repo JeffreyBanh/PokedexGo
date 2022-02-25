@@ -16,7 +16,7 @@ const StatesBar = () => {
     return (
         <div className='bar'>
             <Stack sx={{ width: '100%' }} spacing={5}>
-                <p className='barInfo'>
+                <p style = {{fontSize: "3vw"}} className='barInfo'>
                     Attack <span className='barNmb'>37</span>
                 </p>
                 <LinearProgress variant="determinate" value={37} color="secondary" />
@@ -29,7 +29,7 @@ const StatesBar = () => {
                 </p>
                 <LinearProgress variant="determinate" value={24} color="success" />
             </Stack>
-            <div className='pokeInfo'>Movesets</div>
+            {/* <div className='pokeInfo'>Movesets</div> */}
             <div>
                 <h1 className='fstmv'>Fast Moves</h1>
                 <Stack className='movesContainer' spacing={2}>

@@ -40,10 +40,10 @@ const Signin = () => {
                         <FormLabel htmlFor='username'>Username</FormLabel>
                         <FormInput 
                         type='text' 
-                        placeholder = 'Your username'
+                        // placeholder = 'Your username'
                         name = 'username'
-                        onChange = {handleInputChange}
-                        value = {userFormData.username}
+                        // onChange = {handleInputChange}
+                        // value = {userFormData.username}
                         required />
                         <FormLabel htmlFor='password'>Password</FormLabel>
                         <FormInput type='password' required />

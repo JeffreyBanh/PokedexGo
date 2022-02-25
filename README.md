@@ -29,7 +29,7 @@
 * MongoDB
 
 # Credits
-Jeffrey Banh : https://github.com/JeffreyBanh \n
+Jeffrey Banh : https://github.com/JeffreyBanh 
 Kevin Fan: https://github.com/Yu-ChengFan
 
 # Questions
